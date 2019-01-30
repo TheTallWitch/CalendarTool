@@ -14,7 +14,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.spournasseh:CalendarTool:0.1.1'
+	        implementation 'com.github.spournasseh:CalendarTool:0.2.0'
 	}
 ```
 
