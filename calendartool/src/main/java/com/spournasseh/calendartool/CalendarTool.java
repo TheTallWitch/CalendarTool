@@ -62,14 +62,14 @@ public class CalendarTool {
         }
         else return false;
     }
-    public String getJalaliWeekDay() {
+    public String getIranianWeekDay() {
         return persianWeek.get(getDayOfWeek());
     }
-    public String getJalaliStringShorter() {
+    public String getIranianStringShorter() {
 
         return String.valueOf(irDay) + " " + persianMonths.get(irMonth - 1);
     }
-    public String getJalaliStringShort() {
+    public String getIranianStringShort() {
 
         return String.valueOf(irDay) + " " + persianMonths.get(irMonth - 1) + " " + irYear;
     }
@@ -81,7 +81,7 @@ public class CalendarTool {
 
         return String.valueOf(luDay) + " " + lunarMonths.get(luMonth - 1) + " " + luYear;
     }
-    public String getJalaliStringLong() {
+    public String getIranianStringLong() {
 
         return persianWeek.get(getDayOfWeek()) + " " + String.valueOf(irDay) + " " + persianMonths.get(irMonth - 1) + " " + irYear;
     }
@@ -447,7 +447,7 @@ public class CalendarTool {
         } while ((j<20) && (irYear >= jm));
         N = irYear - jp;
         // Find the number of leap years from AD 621 to the begining of the current
-        // Iranian year in the Iranian (Jalali) calendar_month
+        // Iranian year in the Iranian (Iranian) calendar_month
         leapJ += (N/33 * 8 + ((N % 33) +3)/4);
         if ( ((jump % 33) == 4 ) && ((jump-N)==4))
             leapJ++;
@@ -483,7 +483,7 @@ public class CalendarTool {
         } while ((j<20) && (irYear1 >= jm));
         N = irYear1 - jp;
         // Find the number of leap years from AD 621 to the begining of the current
-        // Iranian year in the Iranian (Jalali) calendar_month
+        // Iranian year in the Iranian (Iranian) calendar_month
         leapJ += (N/33 * 8 + ((N % 33) +3)/4);
         if ( ((jump % 33) == 4 ) && ((jump-N)==4))
             leapJ++;
