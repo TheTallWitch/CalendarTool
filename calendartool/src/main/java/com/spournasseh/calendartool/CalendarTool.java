@@ -65,6 +65,12 @@ public class CalendarTool {
     public String getIranianWeekDay() {
         return persianWeek.get(getDayOfWeek());
     }
+    public String getGregorianWeekDay() {
+        return gregorianWeek.get(getDayOfWeek());
+    }
+    public String getLunarWeekDay() {
+        return lunarWeek.get(getDayOfWeek());
+    }
     public String getIranianStringShorter() {
 
         return String.valueOf(irDay) + " " + persianMonths.get(irMonth - 1);
@@ -332,12 +338,12 @@ public class CalendarTool {
                 "], Lunar:["+getLunarDate()+"]");
     }
 
-    public int getDayOfWeek()
+    private int getDayOfWeek()
     {
         return (JDN % 7);
     }
 
-    public int getPersianDayOfWeek() {
+    private int getPersianDayOfWeek() {
         int w = getDayOfWeek() + 2;
         if (w >= 7) { w -= 7; }
         return w;
@@ -462,7 +468,7 @@ public class CalendarTool {
             leap = 4;
     }
 
-    public boolean IsLeap(int irYear1) {
+    private boolean IsLeap(int irYear1) {
         // Iranian years starting the 33-year rule
         int Breaks[]= {-61, 9, 38, 199, 426, 686, 756, 818,1111,1181,1210,1635,2060,2097,2192,2262,2324,2394,2456,3178} ;
         int jm,N,leapJ,leapG,jp,j,jump;
