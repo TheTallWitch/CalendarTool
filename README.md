@@ -69,7 +69,7 @@ tool.getLunarDay(); //returns integer as: 23
 tool.getLunarWeekDay(); //returns string as : "الاثنین"
 tool.getLunarStringShort(); //returns string as "23 جمادی الاول 1440"
 tool.getLunarStringLong();//returns string as "الاثنین 23 جمادی الاول 1440"
-tool.isLunarLeapYear(int year); //returns boolean
+tool.isLunarLeapYear(int year); //returns bool value
 ```
 
 5. Other Methods
