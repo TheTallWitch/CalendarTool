@@ -338,7 +338,7 @@ public class CalendarTool {
                 "], Lunar:["+getLunarDate()+"]");
     }
 
-    private int getDayOfWeek()
+    public int getDayOfWeek()
     {
         return (JDN % 7);
     }
