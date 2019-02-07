@@ -14,7 +14,7 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.spournasseh:CalendarTool:0.1.1'
+	        implementation 'com.github.spournasseh:CalendarTool:0.2.0'
 	}
 ```
 
@@ -42,7 +42,7 @@ tool.dateDifferenceInDays(String date1, String date2); //returns integer as: 125
 tool.isPersianLeapYear(int year); //returns boolean
 ```
 
-2. Working with Gregorian Dates (Miladi)
+3. Working with Gregorian Dates (Miladi)
 ```
 tool.setGregorianDate(int year, int month, int day);
 
@@ -58,7 +58,7 @@ tool.getGregorianStringFarsiLong();//returns string as "دوشنبه 30 ژانو
 tool.isGregorianLeapYear(int year); //returns boolean
 ```
 
-2. Working with Lunar Dates (Hijri Ghamari)
+4. Working with Lunar Dates (Hijri Ghamari)
 ```
 tool.setLunarDate(int year, int month, int day);
 
@@ -72,7 +72,7 @@ tool.getLunarStringLong();//returns string as "الاثنین 23 جمادی ال
 tool.isLunarLeapYear(int year); //returns boolean
 ```
 
-3. Other Methods
+5. Other Methods
 ```
 tool.nextDay(); //method to move the object to the next day, handling month or year changes
 tool.nextDay(int days); //method to move the object to the next mentioned days, handling month or year changes
